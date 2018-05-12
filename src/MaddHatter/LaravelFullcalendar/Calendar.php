@@ -138,9 +138,9 @@ class Calendar
      */
     public function eventsToJson()
     {
-        $this->eventCollection->toJson();
+        $json = $this->eventCollection->toJson();
 
-        return $this;
+        return $json;
     }
 
     /**
