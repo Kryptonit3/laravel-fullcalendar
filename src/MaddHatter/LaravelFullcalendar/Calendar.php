@@ -130,6 +130,18 @@ class Calendar
 
         return $this->id;
     }
+    
+    /**
+     * Return events in Json for ajax requests with events callback url
+     *
+     * @return json $this
+     */
+    public function eventsToJson()
+    {
+        $this->eventCollection->toJson();
+
+        return $this;
+    }
 
     /**
      * Add an event
